@@ -1,0 +1,105 @@
+/* General */
+html,
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Navbar */
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 64px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav .logo {
+    display: flex;
+    margin-left: 24px;
+}
+
+nav .bold {
+    font-weight: 900;
+}
+
+nav .menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-left: auto;
+    margin-right: 24px;
+}
+
+/* Banner */
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #dcdcdc;
+}
+
+.banner {
+    margin: 32px 24px;
+    width: 40%;
+    height: auto;
+}
+
+.content h1, h4 {
+    opacity: 0.5;
+}
+
+.button {
+    background-color: #4a4a4a;
+    color: white;
+    padding: 8px 60px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+/* Main */
+
+#main {
+    display: flex;
+    
+}
+
+.main-banner {
+    margin: 32px 24px;
+    width: 40%;
+    height: fit-content;
+}
+
+.main-content {
+    
+}
+
+.images-container {
+    
+}
+
+.image-content {
+    display: flex;
+    justify-content: space-between;
+    border-left: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    align-items: center;
+}
+.image-content img {
+    height: auto;
+    width: 40%;
+    margin: 16px;
+}
+
+.image-content p {
+    font-size: 15px;
+}
+
+.image-text {
+    float: right;
+    margin-right: 32px;
+}
