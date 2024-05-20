@@ -1,9 +1,19 @@
 /* General */
+
 html,
 body {
     margin: 0;
     font-size: 16px;
     font-family: 'Lato', sans-serif;
+
+}
+
+@media only screen and (min-width: 1600px) {
+    html, body {
+        width: 80%;
+        margin: 0 auto;
+        background-color: #40A578;
+    }
 }
 
 /* Navbar */
@@ -11,13 +21,13 @@ body {
 nav {
     display: flex;
     align-items: center;
-    height: 64px;
-    position: fixed;
+    position: relative;
+    height: 4rem;
+    padding: 0 24px;
     background-color: white;
-    width: 100%;
+    border-bottom: 3px solid #dddddd;
     top: 0;
     z-index: 1;
-    border-bottom: 3px solid #dddddd;
 }
 
 nav ul {
@@ -50,12 +60,14 @@ header {
 }
 
 .banner {
-    margin: 96px 24px 32px;
+    margin: 32px 24px 32px;
     width: 60%;
 }
 
 .content {
     opacity: 0.5;
+    font-size: 1.5rem;
+    padding: 1rem;
 }
 
 .content p {
@@ -65,7 +77,7 @@ header {
 .button {
     background-color: #000000;
     color: white;
-    padding: 8px 80px;
+    padding: 8px 60px;
     border-radius: 4px;
     text-decoration: none;
 }
@@ -75,6 +87,7 @@ header {
 #main {
     display: flex;
     justify-content: space-between;
+    background-color: white;
 }
 
 .main-content {
@@ -93,7 +106,7 @@ header {
 }
 
 #main .images-container {
-    width: fit-content;
+    width: 35%;
 }
 
 #main .image-content {
@@ -112,15 +125,11 @@ header {
 #main .image-content img {
     height: auto;
     width: 40%;
-    margin: 16px;
-}
-
-#main .image-content p {
-    font-size: 15px;
+    margin: 1rem;
 }
 
 #main .image-text {
-    margin-right: 32px;
+    margin-right: 1rem;
     width: 60%;
 }
 
@@ -139,8 +148,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 16px;
-    margin: 16px;
+    padding: 1rem;
+    margin: 1rem;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -182,12 +191,13 @@ header {
 /* Thesis Exhibit */
 
 #exhibit {
-    border-bottom: 3px solid #dddddd;
+    background-color: white;
 }
 
-#exhibit h1 {
+.exhibit-title {
     text-align: center;
-    margin: 32px 0;
+    padding: 2rem 0;
+    margin: 0;
 }
 
 #exhibit .last {
@@ -230,6 +240,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 24px;
+    padding: 0 24px;
     padding-bottom: 24px;
+    background-color: #ececec;
 }
